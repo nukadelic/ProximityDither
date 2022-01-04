@@ -1,5 +1,5 @@
 # ProximityDither
-Distance based fader - a unity opaque shader using dither to fake transparency and alpha clipping
+Distance based fader - a unity opaque shader using dither to fake transparency using alpha clipping
 
 The effect: 
 
