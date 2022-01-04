@@ -22,14 +22,14 @@ public class ProximityDither : MonoBehaviour
     public bool disableRenderGO = false;
 
     [Header("Optional")]
-    [Tooltip("Keep value as null to auto assign XRHead.transform as the target value")]
-    public Transform target = null;
+    [Tooltip("Keep value as null to auto assign Main camera transform as the target value")]
+    public Transform target;
 
     Material renderMaterial;
 
     public void Awake()
     {
-        if( target == null ) target = XRHead.transformRef; 
+        if( target == null ) target = Camera.main; 
 
         if( renderToHide == null ) Debug.LogError("Null render reference");
 
