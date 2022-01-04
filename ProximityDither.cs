@@ -52,7 +52,7 @@ public class ProximityDither : MonoBehaviour
 
         dist = ( dist - distanceMin ) / ( distanceMax - distanceMin );
 
-        Draw.label( transform.position, dist.ToString("N2") , Color.red, 0.025f );
+        // Draw.label( transform.position, dist.ToString("N2") , Color.red, 0.025f );
 
         bool active = disableRenderGO ? renderToHide.gameObject.activeSelf : renderToHide.enabled;
 
